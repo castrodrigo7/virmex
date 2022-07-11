@@ -1,0 +1,74 @@
+*{
+    margin: 0px; /* MARGEN EXTERNO */
+    padding: 0px; /* MARGEN INTERNO */
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(3, 63, 26);
+}
+
+.header__logo {
+    display: inline;
+}
+
+.header__item {
+    display: inline;
+    padding: 20px;
+}
+
+.header__item a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0 16px;
+}
+
+/* MAIN */
+main {
+    padding-top: 20px;
+}
+
+li {
+    padding: 10px 10px;
+}
+
+.productos__price {
+    color: rgb(41, 177, 98);
+    padding: 0 0 5px 0;
+}
+
+.productos__img {
+    width: 300px;
+    height: 300px;
+    padding: 0 0 10px 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 0 16px;
+}
+
+h2 {
+    padding: 0 0 10px 16px;
+}
+
+article { 
+    background-color: rgb(36, 34, 34);
+    margin: 10px;
+    padding: 20px; ;
+}
+
+p {
+    padding: 0 0 16px 16px;
+}
