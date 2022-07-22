@@ -11,13 +11,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- ANIMACION -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <title> Virmex </title>
 </head>
 <body>
     <header><!-- ENCABEZADO -->
-        <nav class="header__nav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="header__item" href="#" ><!--  -->
+                <img src="resources/favicon.ico" alt="" width="50" height="44" class="d-inline-block align-text-center">
+                Virmex
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Index</a>
+                  </li> -->
+                  <li class="nav-item header__item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item header__item">
+                    <a class="nav-link" href="pages/categorias.html">Categorías</a>
+                  </li>
+                  <li class="nav-item header__item">
+                    <a class="nav-link" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item header__item">
+                    <a class="nav-link" href="pages/usuario.html">Usuario</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a> -->
+                    <!-- <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul> 
+                  </li> -->
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>-->
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+        </nav>
+<!--         <nav class="header__nav">
             <img class="header__logo" src="resources/favicon.ico">
             <ul class="header__lista">
                 <li class="header__item"><a href="#">Inicio</a></li>
@@ -26,31 +76,111 @@
                 <li class="header__item"><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
                 <li class="header__item"><a href="pages/usuario.html">Usuario</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="resources/publicidad.jpg" class="carousel_altura d-block w-100 " alt="publicidad">
+              </div>
+              <div class="carousel-item">
+                <img src="resources/uva.jpg" class="carousel_altura d-block w-100 " alt="uva">
+              </div>
+              <div class="carousel-item">
+                <img src="resources/res.jpg" class="carousel_altura d-block w-100 " alt="res de vaca">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <h1 class="animate__animated animate__fadeIn" >PRODUCTOS</h1>
+        <h3>Sección Vinos</h3>
         <section class="main__productos"><!-- Primera Seccion -->
             <article class="article__productos">
                 <img class="productos__img" src="resources/barricas.jpg" alt="barricas">
-                <h2 class="productos__price">$ 10000</h2>
-                <h3>Barricas de Roble</h3></article>
+                <h4 class="productos__price">$ 10000</h4>
+                <h5>Barricas de Roble</h5></article>
             <article class="article__productos">
                 <img class="productos__img" src="resources/botellas.jpg" alt="botellas">
-                <h2 class="productos__price">$ 100 unidad</h2>
-                <h3>Botellas de vino</h3></article>
+                <h4 class="productos__price">$ 100 unidad</h4>
+                <h5>Botellas de vino</h5></article>
             <article class="article__productos">
                 <img class="productos__img" src="resources/corcho.jpg" alt="corcho">
-                <h2 class="productos__price">$ 20 unidad</h2>
-                <h3>Corcho de vino</h3></article>
+                <h4 class="productos__price">$ 20 unidad</h4>
+                <h5>Corcho de vino</h5></article>
             <article class="article__productos">
                 <img class="productos__img" src="resources/vino.jpg" alt="vino">
-                <h2 class="productos__price">$ 500 unidad</h2>
-                <h3>Vino Malbec</h3></article>
+                <h4 class="productos__price">$ 500 unidad</h4>
+                <h5>Vino Malbec</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/botellas1.jpg" alt="botellas">
+                <h4 class="productos__price">$ 2500 pallet</h4>
+                <h5>Vino Malbec</h5></article>
+        </section>  
+        <h3>Mas Exportados</h3>
+        <section class="main__productos"><!-- Primera Seccion -->
+            <article class="article__productos">
+                <img class="productos__img" src="resources/soja.jpg" alt="soja">
+                <h4 class="productos__price">$ 10000</h4>
+                <h5>Soja a granel</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/trigo.jpg" alt="trigo">
+                <h4 class="productos__price">$ 100 unidad</h4>
+                <h5>Trigo a granel</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/carne.jpg" alt="carne">
+                <h4 class="productos__price">$ 20 unidad</h4>
+                <h5>Carne Vacuna</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/petroleo.jpg" alt="petroleo">
+                <h4 class="productos__price">$ 500 unidad</h4>
+                <h5>Petroquimicos</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/oro.jpg" alt="oro">
+                <h4 class="productos__price">$ 500 unidad</h4>
+                <h5>Oro</h5></article>
+        </section>  
+        <h3>Mas Importados</h3>
+        <section class="main__productos"><!-- Primera Seccion -->
+            <article class="article__productos">
+                <img class="productos__img" src="resources/auto.jpg" alt="autos">
+                <h4 class="productos__price">$ 10000</h4>
+                <h5>Vehiculos Volkswagen</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/gas.jpg" alt="gas">
+                <h4 class="productos__price">$ 100 unidad</h4>
+                <h5>Gas Natural</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/celulares.jpg" alt="celulares">
+                <h4 class="productos__price">$ 20 unidad</h4>
+                <h5>Celulares</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/medicina.jpg" alt="Medicamentos">
+                <h4 class="productos__price">$ 500 unidad</h4>
+                <h5>Medicamentos</h5></article>
+            <article class="article__productos">
+                <img class="productos__img" src="resources/porotos.jpg" alt="Porotos de Soja">
+                <h4 class="productos__price">$ 500 unidad</h4>
+                <h5>Porotos de Soja</h5></article>
         </section>  
     </main>
     <footer><!-- Pie de pagina -->
         <P>Copyright © 2022 Virmex. TODOS LOS DERECHOS RESERVADOS.</P>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
