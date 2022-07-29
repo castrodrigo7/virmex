@@ -1,0 +1,35 @@
+/* MEDIA DE CELULAR */
+@media (min-width: 320px) and (max-width: 575px) {
+
+    header {
+        width: auto;
+        height: auto;
+        .header{
+            &__nav {
+                flex-direction: column;
+            }
+            &__lista {
+                flex-direction: column;
+                flex-grow: 0;
+                align-items: center;
+            }
+        }
+    }
+
+    .contacto__grid {
+        display: inline;
+    }
+}
+
+.user__img {
+    margin: 20px 20px;
+}
+
+/* MEDIA QUERIE DE TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+
+    header {
+        width: auto;
+        height: auto;
+    }
+}

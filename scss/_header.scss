@@ -1,0 +1,37 @@
+/* HEADER */
+
+header {
+    background-image: linear-gradient(to bottom, $color-principal, $color-base);
+
+    .header {
+
+        &__nav {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+        
+        &__lista {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        
+        &__item {
+            color: $color-texto;
+            text-decoration: none;
+            padding: 0;
+            
+            &:hover{
+                transform: scale(1.05, 1.05);
+                transition: 0.5;
+            }
+            
+            & a {
+                color: $color-texto;
+                text-decoration: none;
+            }
+        }
+    }
+} 
