@@ -1,0 +1,14 @@
+*{
+    margin: 0px; /* MARGEN EXTERNO */
+    padding: 0px; /* MARGEN INTERNO */
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: $color-base;
+    color: $color-texto;
+    font-family: 'Roboto', sans-serif
+    
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"  content="COMERCIO EXTERIOR, COMEX, COMERCIO INTERNACIONAL, MERCADO LIBRE, VIRTMEX, IMPORTACION, EXPORTACION, IMPORTACÍON, EXPORTACÍON, PRODUCTOS">
+    <meta name="description" content="Comprá y vendé productos nacionales o de afuera. Encontrá miles de marcas y artículos al mejor precio. ">
     <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
     <!-- LETRAS DE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <title> Virmex </title>
+    <title> VIRTMEX | Tu felicidad nos importa</title>
 </head>
 <body>
     <header><!-- ENCABEZADO -->
@@ -23,16 +25,13 @@
             <div class="container-fluid">
               <a class="header__item" href="#" ><!--  -->
                 <img src="resources/favicon.ico" alt="" width="50" height="44" class="d-inline-block align-text-center">
-                Virmex
+                Virtmex
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Index</a>
-                  </li> -->
                   <li class="nav-item header__item">
                     <a class="nav-link" href="pages/usuario.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 20 20">
                       <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -48,38 +47,10 @@
                   <li class="nav-item header__item">
                     <a class="nav-link" href="pages/contacto.html">Contacto</a>
                   </li>
-                  <!-- <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a> -->
-                    <!-- <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul> 
-                  </li> -->
-                  <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>-->
                 </ul>
-                <!-- <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
               </div>
             </div>
         </nav>
-<!--         <nav class="header__nav">
-            <img class="header__logo" src="resources/favicon.ico">
-            <ul class="header__lista">
-                <li class="header__item"><a href="#">Inicio</a></li>
-                <li class="header__item"><a href="pages/contacto.html">Contacto</a></li>
-                <li class="header__item"><a href="pages/categorias.html">Categorías</a></li>
-                <li class="header__item"><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li class="header__item"><a href="pages/usuario.html">Usuario</a></li>
-            </ul>
-        </nav> -->
     </header>
     <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -110,77 +81,62 @@
           </div>
         <h1 class="animate__animated animate__fadeIn" >PRODUCTOS</h1>
         <h3 class="main__titulos">Sección Vinos</h3>
-        <section class="main__productos"><!-- Primera Seccion -->
-            <article class="article__productos">
-                <img class="productos__img" src="resources/barricas.jpg" alt="barricas">
-                <h4 class="productos__price">$ 10000</h4>
-                <h5>Barricas de Roble</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/botellas.jpg" alt="botellas">
-                <h4 class="productos__price">$ 100 unidad</h4>
-                <h5>Botellas de vino</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/corcho.jpg" alt="corcho">
-                <h4 class="productos__price">$ 20 unidad</h4>
-                <h5>Corcho de vino</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/vino.jpg" alt="vino">
-                <h4 class="productos__price">$ 500 unidad</h4>
-                <h5>Vino Malbec</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/botellas1.jpg" alt="botellas">
-                <h4 class="productos__price">$ 2500 pallet</h4>
-                <h5>Botellas</h5></article>
+        <section class="main__productos">
+          <article class="card__base"> <div class="card-barricas"></div>
+            <h4 class="card__price">$ 10000</h4>
+            <h5>Barricas de Roble</h5></article>
+          <article class="card__base"> <div class="card-botellas"></div>
+            <h4 class="card__price">$ 100 unidad</h4>
+            <h5>Botellas de vino</h5></article>
+          <article class="card__base"> <div class="card-corcho"></div>
+            <h4 class="card__price">$ 20 unidad</h4>
+            <h5>Corcho de vino</h5></article>
+          <article class="card__base"> <div class="card-vino"></div>
+            <h4 class="card__price">$ 500 unidad</h4>
+            <h5>Vino Malbec</h5></article>
+          <article class="card__base"> <div class="card-pallets"></div>
+            <h4 class="card__price">$ 2500 pallet</h4>
+            <h5>Botellas</h5></article>
         </section>  
         <h3 class="main__titulos">Más Exportados</h3>
-        <section class="main__productos"><!-- Primera Seccion -->
-            <article class="article__productos">
-                <img class="productos__img" src="resources/soja.jpg" alt="soja">
-                <h4 class="productos__price">$ 10000</h4>
-                <h5>Soja a granel</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/trigo.jpg" alt="trigo">
-                <h4 class="productos__price">$ 100 unidad</h4>
-                <h5>Trigo a granel</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/carne.jpg" alt="carne">
-                <h4 class="productos__price">$ 20 unidad</h4>
-                <h5>Carne Vacuna</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/petroleo.jpg" alt="petroleo">
-                <h4 class="productos__price">$ 500 unidad</h4>
-                <h5>Petroquímicos</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/oro.jpg" alt="oro">
-                <h4 class="productos__price">$ 500 unidad</h4>
-                <h5>Oro</h5></article>
+        <section class="main__productos">
+          <article class="card__base"> <div class="card-soja"></div>
+            <h4 class="card__price">$ 10000</h4>
+            <h5>Soja a granel</h5></article>
+          <article class="card__base"> <div class="card-trigo"></div>
+            <h4 class="card__price">$ 100 unidad</h4>
+            <h5>Trigo a granel</h5></article>
+          <article class="card__base"> <div class="card-carne"></div>
+            <h4 class="card__price">$ 20 unidad</h4>
+            <h5>Carne Vacuna</h5></article>
+          <article class="card__base"> <div class="card-petro"></div>
+            <h4 class="card__price">$ 500 unidad</h4>
+            <h5>Petroquímicos</h5></article>
+          <article class="card__base"> <div class="card-oro"></div>
+            <h4 class="card__price">$ 500 unidad</h4>
+            <h5>Oro</h5></article>
         </section>  
         <h3 class="main__titulos">Más Importados</h3>
-        <section class="main__productos"><!-- Primera Seccion -->
-            <article class="article__productos">
-                <img class="productos__img" src="resources/auto.jpg" alt="autos">
-                <h4 class="productos__price">$ 10000</h4>
-                <h5>Vehiculos Volkswagen</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/gas.jpg" alt="gas">
-                <h4 class="productos__price">$ 100 unidad</h4>
-                <h5>Gas Natural</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/celulares.jpg" alt="celulares">
-                <h4 class="productos__price">$ 20 unidad</h4>
-                <h5>Celulares</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/medicina.jpg" alt="Medicamentos">
-                <h4 class="productos__price">$ 500 unidad</h4>
-                <h5>Medicamentos</h5></article>
-            <article class="article__productos">
-                <img class="productos__img" src="resources/porotos.jpg" alt="Porotos de Soja">
-                <h4 class="productos__price">$ 500 unidad</h4>
-                <h5>Porotos de Soja</h5></article>
+        <section class="main__productos">
+          <article class="card__base"> <div class="card-auto"></div>
+            <h4 class="card__price">$ 10000</h4>
+            <h5>Vehículos Volkswagen</h5></article>
+          <article class="card__base"> <div class="card-gas"></div>
+            <h4 class="card__price">$ 100 unidad</h4>
+            <h5>Gas Natural</h5></article>
+          <article class="card__base"> <div class="card-celular"></div>
+            <h4 class="card__price">$ 20 unidad</h4>
+            <h5>Celulares</h5></article>
+          <article class="card__base"> <div class="card-medicina"></div>
+            <h4 class="card__price">$ 500 unidad</h4>
+            <h5>Medicamentos</h5></article>
+          <article class="card__base"> <div class="card-porotos"></div>
+            <h4 class="card__price">$ 500 unidad</h4>
+            <h5>Porotos de Soja</h5></article>
         </section>  
     </main>
     <footer><!-- Pie de pagina -->
-        <P class="footer__texto">Copyright © 2022 Virmex. TODOS LOS DERECHOS RESERVADOS.</P>
+        <P class="footer__texto">Copyright © 2022 Virtmex. TODOS LOS DERECHOS RESERVADOS.</P>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->

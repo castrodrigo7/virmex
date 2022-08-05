@@ -1,4 +1,87 @@
 /* COLORES */
+.background-centrado, .card-barricas, .card-botellas, .card-corcho, .card-vino, .card-pallets, .card-soja, .card-trigo, .card-carne, .card-petro, .card-oro, .card-auto, .card-gas, .card-celular, .card-medicina, .card-porotos {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* MAP */
+.card__base {
+  background-color: #181a1b;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px; }
+  .card__base:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5; }
+
+.card__img, .card-barricas, .card-botellas, .card-corcho, .card-vino, .card-pallets, .card-soja, .card-trigo, .card-carne, .card-petro, .card-oro, .card-auto, .card-gas, .card-celular, .card-medicina, .card-porotos {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px; }
+
+.card__price {
+  color: #52ea9b;
+  padding: 5px 0 0 0; }
+
+.card-barricas {
+  background-image: url("../resources/barricas.jpg"); }
+
+.card-botellas {
+  background-image: url("../resources/botellas.jpg"); }
+
+.card-corcho {
+  background-image: url("../resources/corcho.jpg"); }
+
+.card-vino {
+  background-image: url("../resources/vino.jpg"); }
+
+.card-pallets {
+  background-image: url("../resources/botellas1.jpg"); }
+
+.card-soja {
+  background-image: url("../resources/soja.jpg"); }
+
+.card-trigo {
+  background-image: url("../resources/trigo.jpg"); }
+
+.card-carne {
+  background-image: url("../resources/carne.jpg"); }
+
+.card-petro {
+  background-image: url("../resources/petroleo.jpg"); }
+
+.card-oro {
+  background-image: url("../resources/oro.jpg"); }
+
+.card-auto {
+  background-image: url("../resources/auto.jpg"); }
+
+.card-gas {
+  background-image: url("../resources/gas.jpg"); }
+
+.card-celular {
+  background-image: url("../resources/celulares.jpg"); }
+
+.card-medicina {
+  background-image: url("../resources/medicina.jpg"); }
+
+.card-porotos {
+  background-image: url("../resources/porotos.jpg"); }
+
+* {
+  margin: 0px;
+  /* MARGEN EXTERNO */
+  padding: 0px;
+  /* MARGEN INTERNO */ }
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  background-color: #232628;
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif; }
+
 /* HEADER */
 header {
   background-image: linear-gradient(to bottom, #01803e, #232628); }
@@ -22,43 +105,6 @@ header {
       color: aliceblue;
       text-decoration: none; }
 
-/* MEDIA DE CELULAR */
-@media (min-width: 320px) and (max-width: 575px) {
-  header {
-    width: auto;
-    height: auto; }
-    header .header__nav {
-      flex-direction: column; }
-    header .header__lista {
-      flex-direction: column;
-      flex-grow: 0;
-      align-items: center; }
-  .contacto__grid {
-    display: inline; } }
-
-.user__img {
-  margin: 20px 20px; }
-
-/* MEDIA QUERIE DE TABLET */
-@media (min-width: 576px) and (max-width: 992px) {
-  header {
-    width: auto;
-    height: auto; } }
-
-* {
-  margin: 0px;
-  /* MARGEN EXTERNO */
-  padding: 0px;
-  /* MARGEN INTERNO */ }
-
-body {
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
-  background-color: #232628;
-  color: aliceblue;
-  font-family: 'Roboto', sans-serif; }
-
 /* MAIN */
 .carousel_altura {
   height: 300px; }
@@ -70,24 +116,12 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row; }
-    main .main__productos:hover {
-      transform: scale(1.05, 1.05);
-      transition: 0.5; }
   main .main__titulos {
     padding: 20px 0 0 200px; }
 
 li {
   list-style: none;
   padding: 10px 10px; }
-
-.productos__price {
-  color: #52ea9b;
-  padding: 0 0 5px 0; }
-
-.productos__img {
-  width: 180px;
-  height: 180px;
-  padding: 0 0 10px 0; }
 
 h1 {
   text-align: center;
@@ -128,3 +162,26 @@ footer {
 
 .footer__texto {
   padding: 100px 0 16px 16px; }
+
+/* MEDIA DE CELULAR */
+@media (min-width: 320px) and (max-width: 575px) {
+  header {
+    width: auto;
+    height: auto; }
+    header .header__nav {
+      flex-direction: column; }
+    header .header__lista {
+      flex-direction: column;
+      flex-grow: 0;
+      align-items: center; }
+  .contacto__grid {
+    display: inline; } }
+
+.user__img {
+  margin: 20px 20px; }
+
+/* MEDIA QUERIE DE TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+  header {
+    width: auto;
+    height: auto; } }

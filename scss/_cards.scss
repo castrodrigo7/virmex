@@ -1,0 +1,49 @@
+/* MAP */
+$card: (
+    barricas: url("../resources/barricas.jpg"),
+    botellas: url("../resources/botellas.jpg"), 
+    corcho: url("../resources/corcho.jpg"),
+    vino: url("../resources/vino.jpg"),
+    pallets:  url("../resources/botellas1.jpg"),
+    soja: url("../resources/soja.jpg"),
+    trigo: url("../resources/trigo.jpg"), 
+    carne: url("../resources/carne.jpg"),
+    petro: url("../resources/petroleo.jpg"),
+    oro:  url("../resources/oro.jpg"),
+    auto: url("../resources/auto.jpg"),
+    gas: url("../resources/gas.jpg"), 
+    celular: url("../resources/celulares.jpg"),
+    medicina: url("../resources/medicina.jpg"),
+    porotos:  url("../resources/porotos.jpg")
+);
+
+.card {
+    &__base {
+        background-color: $color-secundario;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 10px;
+        &:hover {
+            transform: scale(1.05, 1.05);
+            transition: 0.5;
+        }
+    }
+    &__img {
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    &__price {
+        color: rgb(82,234,155);
+        padding: 5px 0 0 0;
+    }
+}
+
+@each $name, $url in $card {
+    .card-#{$name} {
+        @extend .card__img;
+        @extend .background-centrado;
+        background-image: #{$url};
+    }
+    
+}
