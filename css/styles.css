@@ -84,7 +84,7 @@ body {
 
 /* HEADER */
 header {
-  background-image: linear-gradient(to bottom, #01803e, #232628); }
+  background-color: #01803e; }
   header .header__nav {
     display: flex;
     flex-wrap: wrap;
@@ -158,7 +158,7 @@ article {
 
 /* FOOTER */
 footer {
-  background-image: linear-gradient(to top, #181a1b, #232628); }
+  background-color: #181a1b; }
 
 .footer__texto {
   padding: 100px 0 16px 16px; }
