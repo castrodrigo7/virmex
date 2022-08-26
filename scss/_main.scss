@@ -1,0 +1,55 @@
+/* MAIN */
+
+.article_space {
+    margin: 10px;
+    padding: 20px;
+}
+
+.anim_color :hover{ 
+    background-color: aqua;
+}
+
+/* Index */
+
+main {
+    padding: 20px 0 20px 0;
+    .main {
+        &__productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        &__titulos {
+            padding: 20px 0 0 -10px ;
+        }
+    }
+}
+
+/* Usuario */
+
+.user__img {
+    margin: 20px 20px;
+}
+
+/* Contacto */
+
+.ubicacion {
+    padding: 16px 0 0 20px;
+}
+
+.contacto__grid {
+    display: grid;
+    grid-template-areas:"mss info";
+    .info {
+        grid-area: info;
+        padding: 30px;
+        width: auto;
+    }
+    
+    .mss {
+        grid-area: msss;
+        height: auto;
+    }
+    
+}
