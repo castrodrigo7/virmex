@@ -12,6 +12,11 @@
   transform: scale(1.05, 1.05);
   transition: 0.5; }
 
+.flex-center, footer .footer__redes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
 * {
   margin: 0px;
   /* MARGEN EXTERNO */
@@ -78,7 +83,9 @@ main {
 
 /* FOOTER */
 footer {
-  background-color: #181a1b; }
+  background-color: #181a1b;
+  padding: 16px;
+  color: #01803e; }
 
 li {
   list-style: none; }

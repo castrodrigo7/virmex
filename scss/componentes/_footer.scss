@@ -2,4 +2,9 @@
 
 footer {
     background-color: $color-secundario; 
+    padding: 16px;
+    color: $color-principal;
+    .footer__redes {
+        @extend .flex-center;
+    }
 }
