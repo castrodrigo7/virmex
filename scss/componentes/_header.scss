@@ -1,0 +1,24 @@
+/* HEADER */
+
+header {
+    background-color: $color-principal;
+
+    .header {
+        &__bottom {
+            display: flex;
+            justify-content: end;
+        }
+        &__item {
+            @extend .text-style;
+            padding: 0;
+            
+            &:hover{
+                @extend .anim;
+            }
+            
+            & a {
+                @extend .text-style;
+            }
+        }
+    }
+} 

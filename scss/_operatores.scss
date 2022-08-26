@@ -1,0 +1,16 @@
+
+.background-centrado {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-style {
+    color: $color-texto;
+    text-decoration: none;
+}
+
+.anim {
+    transform: scale(1.05, 1.05);
+    transition: 0.5;
+}

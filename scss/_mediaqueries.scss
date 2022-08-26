@@ -5,8 +5,10 @@
         width: auto;
         height: auto;
         .header{
-            &__nav {
-                flex-direction: column;
+            &__bottom {
+                display: flex;
+                justify-content: center;
+                text-align: center;
             }
             &__lista {
                 flex-direction: column;
@@ -16,13 +18,26 @@
         }
     }
 
+    .carousel {
+        display: none;
+    }
+
+    .img_none {
+        display: none;
+    }
+
     .contacto__grid {
         display: inline;
     }
-}
 
-.user__img {
-    margin: 20px 20px;
+    .article {
+        &_user {
+            padding: 0 20px 0 20px;
+        }
+        &_cat {
+            margin: 10px 0 10px 0;
+        }
+    }
 }
 
 /* MEDIA QUERIE DE TABLET */
@@ -31,5 +46,9 @@
     header {
         width: auto;
         height: auto;
+    }
+
+    .article_user {
+        padding: 0 20px 0 20px;
     }
 }

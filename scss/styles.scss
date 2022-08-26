@@ -1,8 +1,9 @@
 @import "variables";
-@import "operators";
-@import "cards";
-@import "body";
-@import "header";
-@import "main";
-@import "footer";
+@import "operatores";
+@import "etiquetas";
+@import "productos";
 @import "mediaqueries";
+@import "componentes/body";
+@import "componentes/header";
+@import "componentes/main";
+@import "componentes/footer";

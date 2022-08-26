@@ -1,4 +1,4 @@
-<h1>VIRMEX - Proyecto CoderHouse</h1>
+<h1>VIRTMEX - Proyecto CoderHouse</h1>
 <p>Es un sitio pensado para comercializar productos y facilitar las exportaciones e importaciones del pais</p>
 
 <h2>Tecnologias usadas</h2>

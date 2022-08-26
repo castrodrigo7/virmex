@@ -4,15 +4,33 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
+.text-style, a, header .header__item, header .header__item a {
+  color: aliceblue;
+  text-decoration: none; }
+
+.anim, .card__base:hover, header .header__item:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.5; }
+
+li {
+  list-style: none; }
+
+h1 {
+  text-align: center;
+  padding: 10px; }
+
+h4 {
+  padding: 10px 0 10px 16px; }
+
+article {
+  background-color: #181a1b; }
+
 /* MAP */
 .card__base {
   background-color: #181a1b;
   border-radius: 15px;
   margin: 10px;
   padding: 10px; }
-  .card__base:hover {
-    transform: scale(1.05, 1.05);
-    transition: 0.5; }
 
 .card__img, .card-barricas, .card-botellas, .card-corcho, .card-vino, .card-pallets, .card-soja, .card-trigo, .card-carne, .card-petro, .card-oro, .card-auto, .card-gas, .card-celular, .card-medicina, .card-porotos {
   border-radius: 10px;
@@ -68,6 +86,38 @@
 .card-porotos {
   background-image: url("../resources/porotos.jpg"); }
 
+/* MEDIA DE CELULAR */
+@media (min-width: 320px) and (max-width: 575px) {
+  header {
+    width: auto;
+    height: auto; }
+    header .header__bottom {
+      display: flex;
+      justify-content: center;
+      text-align: center; }
+    header .header__lista {
+      flex-direction: column;
+      flex-grow: 0;
+      align-items: center; }
+  .carousel {
+    display: none; }
+  .img_none {
+    display: none; }
+  .contacto__grid {
+    display: inline; }
+  .article_user {
+    padding: 0 20px 0 20px; }
+  .article_cat {
+    margin: 10px 0 10px 0; } }
+
+/* MEDIA QUERIE DE TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+  header {
+    width: auto;
+    height: auto; }
+  .article_user {
+    padding: 0 20px 0 20px; } }
+
 * {
   margin: 0px;
   /* MARGEN EXTERNO */
@@ -85,30 +135,24 @@ body {
 /* HEADER */
 header {
   background-color: #01803e; }
-  header .header__nav {
+  header .header__bottom {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0; }
-  header .header__lista {
-    display: flex;
-    list-style: none;
-    padding: 0; }
+    justify-content: end; }
   header .header__item {
-    color: aliceblue;
-    text-decoration: none;
     padding: 0; }
-    header .header__item:hover {
-      transform: scale(1.05, 1.05);
-      transition: 0.5; }
-    header .header__item a {
-      color: aliceblue;
-      text-decoration: none; }
 
 /* MAIN */
 .carousel_altura {
   height: 300px; }
 
+.article_space {
+  margin: 10px;
+  padding: 20px; }
+
+.anim_color :hover {
+  background-color: aqua; }
+
+/* Index */
 main {
   padding: 20px 0 20px 0; }
   main .main__productos {
@@ -117,29 +161,15 @@ main {
     flex-wrap: wrap;
     flex-direction: row; }
   main .main__titulos {
-    padding: 20px 0 0 200px; }
+    padding: 20px 0 0 -10px; }
 
-li {
-  list-style: none;
-  padding: 10px 10px; }
+/* Usuario */
+.user__img {
+  margin: 20px 20px; }
 
-h1 {
-  text-align: center;
-  padding: 10px; }
-
-h4 {
-  padding: 10px 0 10px 16px; }
-
+/* Contacto */
 .ubicacion {
   padding: 16px 0 0 20px; }
-
-article {
-  background-color: #181a1b;
-  margin: 10px;
-  padding: 20px; }
-
-.article_user {
-  padding: 0 100px 0 100px; }
 
 .contacto__grid {
   display: grid;
@@ -152,36 +182,6 @@ article {
     grid-area: msss;
     height: auto; }
 
-.border-success {
-  --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)); }
-
 /* FOOTER */
 footer {
   background-color: #181a1b; }
-
-.footer__texto {
-  padding: 100px 0 16px 16px; }
-
-/* MEDIA DE CELULAR */
-@media (min-width: 320px) and (max-width: 575px) {
-  header {
-    width: auto;
-    height: auto; }
-    header .header__nav {
-      flex-direction: column; }
-    header .header__lista {
-      flex-direction: column;
-      flex-grow: 0;
-      align-items: center; }
-  .contacto__grid {
-    display: inline; } }
-
-.user__img {
-  margin: 20px 20px; }
-
-/* MEDIA QUERIE DE TABLET */
-@media (min-width: 576px) and (max-width: 992px) {
-  header {
-    width: auto;
-    height: auto; } }
